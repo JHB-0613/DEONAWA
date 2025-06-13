@@ -1,0 +1,288 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>더나와</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="icon" type="image/x-icon" href="assets/500.png" />
+		<style>
+			.slider-container {
+			width: 1000px;
+			margin: auto;
+			text-align: center;
+			}
+
+			.slider {
+			width: 100%;
+			height: 400px;
+			overflow: hidden;
+			position: relative;
+			background: #fff;
+			}
+
+			.slides {
+			display: flex;
+			width: 100%;
+			height: 100%;
+			transition: transform 0.5s ease-in-out;
+			}
+
+			.slide {
+			flex: 0 0 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			}
+
+			.slide img {
+			max-width: 80%;
+			max-height: 80%;
+			object-fit: contain;
+			border-radius: 10px;
+			}
+
+			.buttons {
+			position: absolute;
+			top: 50%;
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+			transform: translateY(-50%);
+			pointer-events: none;
+			}
+
+			.buttons button {
+			background-color: rgba(0, 0, 0, 0.5);
+			color: white;
+			border: none;
+			font-size: 2em;
+			cursor: pointer;
+			padding: 5px 15px;
+			border-radius: 5px;
+			pointer-events: all;
+			}
+
+			.caption {
+			margin-top: 15px;
+			font-size: 1.2em;
+			color: #333;
+			height: 40px;
+			line-height: 40px;
+			}
+			.thumbnail {
+			width: 600px;
+			height: 400px;
+			margin: 0 auto 20px auto;
+			overflow: hidden;
+			border-radius: 10px;
+			box-shadow: 0 0 8px rgba(0,0,0,0.2);
+			}
+
+			.thumbnail img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<h1 class="logo"><strong>부품간 호환성 확인 - 부품 별 선택방법</strong></h1>
+								</header>
+
+							<!-- Content -->
+								<section>
+									<header class="major">
+										<h1>부품간 호환성 확인</h1>
+										<p>가장 기본적인 부품 선택 순서인 CPU - 메인보드 - RAM - 저장장치 - 그래픽카드 - 파워 - 케이스 - 쿨러 순서로 이야기한다.</p>
+									</header>
+									
+									<div class="slider-container">
+										<div class="thumbnail">
+											<img id="thumb-img" src="images/783dca.png" alt="thumbnail" />
+										</div>
+									<div class="slider">
+										<div class="slides">
+										<div class="slide"><img src="images/783d.png"></div>
+										<div class="slide"><img src="images/main.png"></div>
+										<div class="slide"><img src="images/ram2.png"></div>
+										<div class="slide"><img src="images/ssd2.png"></div>
+										<div class="slide"><img src="images/Gpu2.png"></div>
+										<div class="slide"><img src="images/power2.png"></div>
+										<div class="slide"><img src="images/case2.png"></div>
+										<div class="slide"><img src="images/air.png"></div>
+										<div class="slide"><img src="images/water2.png"></div>
+										</div>
+										<div class="buttons">
+										<button onclick="prevSlide()">&#10094;</button>
+										<button onclick="nextSlide()">&#10095;</button>
+										</div>
+									</div>
+									<div class="caption" id="caption">이것은 첫 번째 이미지입니다.</div>
+									</div>
+								</section>
+
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
+
+							<!-- Search -->
+								<section id="search" class="alt">
+									<form method="post" action="#">
+										<input type="text" name="query" id="query" placeholder="Search" />
+									</form>
+								</section>
+
+							<!-- Menu -->
+								<nav id="menu">
+									<header class="major">
+										<h2>Menu</h2>
+									</header>
+									<ul>
+										<li><a href="../index.html">Home</a></li>
+										<li>
+											<span class="opener">PC 부품의 역할</span>
+											<ul>
+												<li><a href="rolemain.html">PC 부품</a></li>
+												<ul>
+													<li><a href="mainboard.html">메인보드</a></li>
+													<li><a href="CPU.html">CPU</a></li>
+													<li><a href="GPU.html">그래픽카드</a></li>
+													<li><a href="RAM.html">RAM</a></li>
+													<li><a href="storage.html">저장장치</a></li>
+													<li><a href="power.html">파워</a></li>
+													<li><a href="cooler.html">쿨러</a></li>
+												</ul>
+											</ul>
+										</li><li>
+											<span class="opener">부품 고르는 법</span>
+											<ul>용도별 성능요약
+												<ul>
+													<li><a href="office.html">사무용</a></li>
+													<li><a href="adobe.html">작업용</a></li>
+													<li><a href="gaming.html">게임용</a></li>
+												</ul>
+												부품 별 선택방법
+												<ul>
+													<ul>CPU
+														<li><a href="intel.html">Intel</a></li>
+														<li><a href="AMD1.html">AMD</a></li>
+													</ul>
+													<ul>그래픽카드
+														<li><a href="Nvidia.html">Nvidia</a></li>
+														<li><a href="AMD2.html">AMD</a></li>
+													</ul>
+													<ul>저장장치
+														<li><a href="ssd.html">ssd</a></li>
+														<li><a href="hdd.html">하드디스크</a></li>
+													</ul>
+													<ul>쿨러
+														<li><a href="air.html">공랭</a></li>
+														<li><a href="water.html">수냉</a></li>
+													</ul>
+												</ul>
+											</ul>
+										</li>
+										<li><a href="compability.html">부품간 호환성 확인</a></li>
+										<li><a href="fix.html">PC 조립방법</a></li>
+										<li><a href="window.html">윈도우 설치방법</a></li>
+									</ul>
+								</nav>
+								<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Goals and Objectives</h2>
+									</header>
+									<p>이 사이트는 조립 PC에 대해서 잘 모르는 사람들이 PC의 부품에 대해서 공부를 하여 자신이 필요한 사양의 컴퓨터 부품들을 선택하고 부품간의 호환성을 확인하는 과정을 거쳐 끝에는 자신만의 PC를 조립할 수 있게 하는 것을 목적으로 합니다.</p>
+									<ul class="contact">
+										<li class="icon solid fa-envelope"><a href="#">information@untitled.tld</a></li>
+										<li class="icon solid fa-phone">(000) 000-0000</li>
+										<li class="icon solid fa-home">1234 Somewhere Road #8254<br />
+										Nashville, TN 00000-0000</li>
+									</ul>
+								</section>
+
+							<!-- Footer -->
+								<footer id="footer">
+									<p class="copyright"><br>Team 500₩</p>
+								</footer>
+						</div>
+					</div>
+			</div>
+
+		<!-- Scripts -->
+			<script>
+				const slidesContainer = document.querySelector('.slides');
+				const captionEl = document.getElementById('caption');
+				const thumbImg = document.getElementById('thumb-img');
+
+				const imageSources = [
+				"images/783dca.png",
+				"images/mainboardca.png",
+				"images/ramca.png",
+				"images/ssdca.png",
+				"images/gpuca.png",
+				"images/powerca.png",
+				"images/caseca.png",
+				"images/airca.png",
+				"images/waterca.png"
+				];
+
+				const captions = [
+				"첫 번째 순서는 CPU입니다. CPU는 메인보드를 선택하는 것에 큰 영향을 주고, 가장 중요한 부품중 하나이므로 가장 첫번째로 선택합니다. 추가적으로 보면 좋은 것은 메모리 규격, PPT(최대 소비 전력), PCIe 버전이 있습니다. 메모리 규격은 이 CPU가 지원하는 메모리(RAM)의 규격을 나타내고 이 CPU는 메모리 규격이 DDR5이기 때문에 그 밑의 세대는 모두 지원한다고 생각하면 편합니다. PPT는 파워 서플라이의 용량을 결정하는 것에 영향을 줍니다. PCIe 버전은 메모리 규격과 마찬가지로 이 CPU가 지원하는 최대 PCIe 버전을 말합니다. 일반적으로 버전이 높아지면 더 빠른 속도를 가집니다.",
+				"두 번째 순서는 메인보드입니다. CPU소켓, 메모리 종류,폼펙터를 확인해야합니다. CPU소켓이 CPU와 맞지 않으면 CPU를 장착할 수 없습니다. 메모리종류가 다르면 슬롯의 모양 또한 달라져 램을 선택하는 것에 영향을 줍니다. 폼펙터를 확인해야하는 이유는 이후 케이스를 결정하는 것에 영향을 줍니다. 추가로 확인하면 좋은 것은 전원부, 저장장치 개수입니다. 전원부를 확인하면 좋은 점은 좋은 부품을 쓸 때 메인보드의 전원부가 너무 좋지 않으면 메인보드가 충분한 성능을 발휘하지 못합니다. 저장장치 개수는 장착할 수 있는 저장장치의 개수를 알려줍니다.",
+				"세 번째는 램입니다. 램은 제품푼류의 DDR버전을 확인해야합니다. 램은 DDR5와 DDR4의 버전이 다르면 생긴 모양 또한 다르기 때문에, 다른 종류의 메모리를 사용하는 메인보드에는 그 메모리를 장착할 수 없습니다.",
+				"네 번째는 SSD입니다. SSD는 폼펙터를 확인해야합니다. SSD의 폼팩터는 보통 크기를 이야기하는데 해당 SSD의 폼팩터를 지원하지않는 메인보드에는 그 SSD를 장착할 수 없습니다. 대부분의 메인보드는 2280의 SSD 폼팩터를 지원합니다. 추가적으로는 RAM 타입을 보면 좋습니다. RAM타입이 현재는 DDR5까지 나왔는데 세대가 높아질 수록 발열량이 많아지고 속도는 더 빨라집니다.",
+				"다섯번째는 그래픽카드입니다. 그래픽카드는 권장 파워용량, 가로(길이), 전원 포트를 확인해야 합니다. 그래픽카드의 권장 파워용량에서 100W 정도를 더한 값을 파워의 용량으로 정합니다. 전원 포트를 확인해야하는 이유는 전원포트를 확인해야 파워 서플라이에서 사용할 선을 정할 수 있습니다. 가로(길이)를 봐야하는 이유는 가로길이를 알아야 케이스의 가로길이가 최소 어느정도가 되어야 하는지 알 수 있습니다. 추가적으로 성능을 최대한 쓰기위해서는 인터페이스를 확인하면 좋습니다.",
+				"여섯 번째는 파워 서플라이입니다. 파워서플라이는 정격출력, PCIe 16핀(12+4) 12V2x6, 깊이를 확인해야합니다. 정격출력이 너무 딱 맞거나 부족하면 컴픁터가 제대로 작동하지 않습니다. 정격출력은 그래픽카드의 정격출력보다 100W이상 넉넉한 파워를 사면 됩니다. PCIe 16핀(12+4) 12V2x6을 확인하는 이유는 해단 케이블이 필요한 그래픽카드를 샀는데 이 케이블이 없으면 따로 구매를 해야합니다. 깊이를 확인하는 이유는 케이스를 구매할 때 알고 구매해야하기 때문입니다. 추가적으로 80PLUS인증을 확인하면 좋습니다. 이 등급니 높으면 그만큼 안전한 파워라는 것입니다. 또한 ETA인증도 비슷한 기능을 합니다.",
+				"일곱 번째는 케이스입니다. 케이스는 대부분의 것과의 호환성을 확인해야하는데 모든 부품이 결국 케이스 안으로 조립이 되기 때문입니다. 케이스를 구매할 때 자신이 사려고하는 그래픽카드의 길이,메인보드의 폼팩터등을 확인하고 쿨러는 어느길이까지 지원하는지 학인합니다. 케이스의 크기는 쿨러의 길이와 크기, 높이를 결정하는 것에 큰 영향을 끼칩니다. 크기가 맞지 않으면 케이스에 장착을 할 수 없기 때문입니다",
+				"여덟 번째는 공랭 쿨러입니다. 공랭 쿨러를 구매할 때는 내가 사려는 CPU의 소켓을 지원하는지, 그리고 높이를 확인해야합니다. CPU의 소켓을 확인하는 이유는 이것으로 이 쿨러를 장착할 수 있고 없고를 결정하는 것에 영향을 줍니다. 높이를 확인해야하는 이유는 높이가 너무 크면 케이스와 맞지 않아서 케이스에 장착할 수 없습니다. 그래서 케이스에서 지원하는 높이 이하의 쿨러를 구매해야합니다.",
+				"아홉 번째는 수냉 쿨러입니다. 수냉쿨러도 동일하게 소켓을 확인해야하고 추가로 팬크기와 개수, 두께를 확인해야합니다. 소캣은 공랭쿨러와 동일한 이유로 확인해야하고 팬 개수와 크기는 케이스에 장착할 수 있는 크기인지 확인하기위해서 확인해야합니다. 그리고 팬두께를 확인하는 이유는 팬두께가 너무 두껍다면 장착을 했을 때 메인보드와 간섭이 일어날 수 있다."
+				];
+
+				let currentIndex = 0;
+
+				function showSlide(index) {
+				slidesContainer.style.transform = `translateX(-${index * 100}%)`;
+				captionEl.textContent = captions[index];
+				thumbImg.src = imageSources[index];
+				}
+
+				function nextSlide() {
+				currentIndex = (currentIndex + 1) % captions.length;
+				showSlide(currentIndex);
+				}
+
+				function prevSlide() {
+				currentIndex = (currentIndex - 1 + captions.length) % captions.length;
+				showSlide(currentIndex);
+				}
+
+				// 초기 슬라이드 표시
+				showSlide(currentIndex);
+			</script>
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
